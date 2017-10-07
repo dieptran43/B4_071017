@@ -1,0 +1,4 @@
+1. Cai dat package: npm init
+2. Cai dat express: npm install express
+3. Cai dat nodemon: npm install nodemon
+4.
