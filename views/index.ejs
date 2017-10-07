@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    This EJS template
+    <p>Hello my first app</p>
+    <!-- <% var login = true %>
+        <% if(login){ %>
+            <p> Logined </p>
+            <p> Xin chao Diep Van </p>
+            <% }else{ %>
+                <p>Pls login</p>
+                <% }%> -->
+               
+                   <% users.forEach(user =>{ %>
+                    <p><%= user.name %></p>                        
+                   <% }) %>
+</body>
+
+</html>

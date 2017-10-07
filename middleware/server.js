@@ -7,6 +7,8 @@ var app = express();
 app.set('view engine', 'ejs');
 app.set('views', './views');
 
+app.use(express.static("./public")); //thu muc chua cac file css
+
 app.use("/",router);
 app.use("/chat",chat);
 const port = process.env.PORT || 3000;

@@ -14,4 +14,12 @@ router.route("/")
 .get(middleModule.getMyName, require("./middleware/getDefault"))
 .post(urlEncoded, json, require("./middleware/postDefault"));
 
+router.route("/info")
+.get(require("./middleware/getInfo"))
+.post(urlEncoded, require("./middleware/postHandleInfo"));
+
+
+// router.route("/handleInfo")
+// .get(require("./middleware/getHandleInfo"));
+
 module.exports = router;
